@@ -9,15 +9,15 @@
             <script src="site.js"></script>
 </head>
 <body class="p-0 m-0">
-            <div class="flex w-full h-screen">
-            <div class="h-screen w-2/12 relative grid grid-cols-1 grid-row-3 bg-white shadow-xl border-r-2 my-side-left">
+            <div class="flex w-full h-[100%] relative">
+            <div class="h-full w-2/12 relative grid grid-cols-1 grid-row-3 bg-white shadow-xl border-r-2 my-side-left">
                         <div class="relative pt-4 px-10 flex icon-top-page">
                                     <img src="imagesite/pepsi.png" class="w-16 h-16 relative left-icon-image">
                                     <h2 class="ml-3 text-blue-700 top-3 tracking-widest text-2xl font-bold">pepsi</h2>
                                   
                         </div>
 
-                        <div class="relative grid -top-10 gap-6 left-5 middle-side">
+                        <div class="relative grid h-80 mt-5 gap-6 left-5 middle-side">
                                     <a href="#">
                                                 <img src="imagesite/dashboard.png" class="left-side-image">
                                                 Dashboard
@@ -40,7 +40,7 @@
                                     </a>
                         </div>
 
-                        <div class="relative grid gap-6 left-5 -top-3 down-side">
+                        <div class="relative grid gap-6 h-80 mt-10 pb-4 left-5 down-side">
                                     <h1 class="text-xl font-bold">Trending Coins</h1>
 
                                     <a href="#">
@@ -62,16 +62,128 @@
                         </div>
             </div>
 
+            <div class="grid-cols-1 grid-row-1 flex-col w-[100%] float-left"> <!--برای زیر هم اومدن نوبار بالا با محتوای پایینش-->
 
-            <div class="relative w-[84%] h-20 flex justify-between b-b-2 shadow-md my-10 px-10">
-                        <a href="#">
-                                  <img src="imagesite/icons8-search-50.png" class="absolute top-2 w-7 h-7 left-11 opacity-40 z-40">  
-                        </a>
+            <div class="relative h-12 w-[100%] flex justify-between my-8 px-10 float-left">
+                        <div>
+                                  <a href="#">
+                                            <img src="imagesite/icons8-search-50.png" class="absolute top-2 w-7 h-7 left-11 opacity-40 z-40">  
+                                  </a>
+                                  <input type="search" placeholder="search for NFTs" class="absolute bg-gray-100 p-2 px-9 rounded-full w-72 h-10 border-2 border-gray-200 outline-none my-top-search">
+                        </div>
+                        <div class="flex gap-6 relative">
+                                    <div class="top-right-image">
+                                                <a href="#">
+                                                            <img src="imagesite\76379509016345278534481-128.png" class="top-right-img">
+                                                </a>
+                                                
+                                    </div>
+                                    <div class="top-right-image">
+                                                <a href="#">
+                                                            <img src="imagesite\19903299871596026813-128.png" class="top-right-img">
+                                                </a>
+                                                
+                                    </div>
+                                    <div class="top-right-image">
+                                                <a href="#">
+                                                            <img src="imagesite\5722348461605810028-128.png" class="top-right-img">
+                                                </a>
+                                                
+                                    </div>
+                        </div>
+                       
+            </div>
+            
+            <div class="grid grid-row-3 w-[62%] relative px-10 float-left my-graphic-pic">
                         
-                        <input type="search" placeholder="search for NFTs" class="absolute bg-gray-100 p-2 px-9 rounded-full w-72 h-10 border-2 border-gray-200 outline-none my-top-search">
+                        <div class="flex flex-col">
+                                    <h1 class="text-3xl font-bold">Recently Added NFTs</h1>
+                                    <div class="flex gap-16 my-5 my-middel-stage">
+                                    <a href="#">Recommended</a>
+                                    <a href="#">New Trends</a>
+                                    <a href="#">Multi Color</a>
+                                    </div>
+                        </div>
+
+                        <div class="flex gap-12">
+                                    <div class="my-contain">
+                                                <div>
+                                                      <a href="#">
+                                                      <img src="imagesite/pexels-andreimike-1271620.jpg" class="image-middel">
+                                                      </a>   
+                                                </div>
+                                                <div>
+                                                            <h2>Universe</h2>
+                                                            <h3>Recommended</h3>
+                                                </div>
+                                                
+                                    </div>
+
+                                    <div class="my-contain">
+                                                <div>
+                                                      <a href="#">
+                                                      <img src="imagesite/pexels-eberhardgross-1743366.jpg" class="image-middel">
+                                                      </a>  
+                                                </div>
+                                                <div>
+                                                            <h2>Dying Star</h2>
+                                                            <h3>Recommended</h3>
+                                                </div>
+                                    </div>
+
+                                    <div class="my-contain">
+                                                <div>
+                                                      <a href="#">
+                                                      <img src="imagesite/pexels-jarodlovekamp-3791466.jpg" class="image-middel">
+                                                      </a>  
+                                                </div>
+                                                <div>
+                                                            <h2>Far Far Away</h2>
+                                                            <h3>Recommended</h3>
+                                                </div>
+                                    </div>
+                        </div>
+
+            </div>
+            <div class="flex flex-col gap-6 w-[33%] h-[50%] float-left ml-12">
+                        <div class="">
+                                    <h2 class="text-2xl font-bold">My Wallets</h2>
+                                    <h3 class="text-gray-400 leading-8">Recommended</h3>
+                        </div>
+                        <div class=" rounded-xl relative w-[94%] h-56 my-background-cart">
+                                    <div class="rounded-full w-10 h-10 bg-white relative left-5 top-3 z-40"></div>
+                                    <div class="rounded-full w-10 h-10 bg-white relative left-11 -top-7 opacity-40 z-30"></div>
+                                    <div class="absolute top-0 left-0 w-full h-full z-0 my-star-back animate-stars my-star-back"></div>
+
+                                    <div class="flex justify-center items-center w-[100%] h-10 z-40 ">
+                                                <h1 class="text-3xl text-white font-bold tracking-wider">6219 8610 0225 6685</h1>
+                                    </div>
+                                    <div class="flex justify-between px-4 relative top-12">
+                                                <h2 class="text-white text-2xl font-semibold">param esmi</h2>
+                                                <h2 class="text-white text-2xl font-semibold">05/14</h2>
+                                    </div>
+
+                                    
+                        </div>
+                        <div>
+                                    <h2>Overview</h2>
+                                    <div>
+
+                                    </div>
+                        </div>
+                        <div>
+                                    <div>
+                                                <h3></h3>
+                                                <img src="">
+                                    </div>
+                                    <div>
+                                                <h3></h3>
+                                                <img src="">
+                                    </div>
+                        </div>
             </div>
 
-
+            </div>
             </div>
 </body>
 </html>
