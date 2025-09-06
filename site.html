@@ -9,15 +9,15 @@
             <script src="site.js"></script>
 </head>
 <body class="p-0 m-0">
-            <div class="flex w-full h-[100%] relative">
-            <div class="h-full w-2/12 relative grid grid-cols-1 grid-row-3 bg-white shadow-xl border-r-2 my-side-left">
+            <div class="flex w-full relative">
+            <div class=" w-2/12 flex flex-col bg-white shadow-xl border-r-2 my-side-left">
                         <div class="relative pt-4 px-10 flex icon-top-page">
-                                    <img src="imagesite/pepsi.png" class="w-16 h-16 relative left-icon-image">
+                                    <img src="imagesite/pepsi.png" class="w-12 bottom-2 h-12 relative left-icon-image">
                                     <h2 class="ml-3 text-blue-700 top-3 tracking-widest text-2xl font-bold">pepsi</h2>
                                   
                         </div>
 
-                        <div class="relative grid h-80 mt-5 gap-6 left-5 middle-side">
+                        <div class="relative grid h-80 gap-4 left-5 middle-side">
                                     <a href="#">
                                                 <img src="imagesite/dashboard.png" class="left-side-image">
                                                 Dashboard
@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="relative grid gap-6 h-80 mt-10 pb-4 left-5 down-side">
-                                    <h1 class="text-xl font-bold">Trending Coins</h1>
+                                    <h1 class="text-xl font-bold relative top-2">Trending Coins</h1>
 
                                     <a href="#">
                                                 <img src="imagesite/bitcoin.png" class="left-side-image">
@@ -62,14 +62,14 @@
                         </div>
             </div>
 
-            <div class="grid-cols-1 grid-row-1 flex-col w-[100%] float-left"> <!--برای زیر هم اومدن نوبار بالا با محتوای پایینش-->
-
-            <div class="relative h-12 w-[100%] flex justify-between my-8 px-10 float-left">
+            
+<div class="flex flex-col w-full">
+            <div class="h-12 w-[100%] relative flex justify-between my-4 px-4 ">
                         <div>
-                                  <a href="#">
-                                            <img src="imagesite/icons8-search-50.png" class="absolute top-2 w-7 h-7 left-11 opacity-40 z-40">  
+                                  <a href="#" class="relative left-1">
+                                            <img src="imagesite/icons8-search-50.png" class="fixed w-7 h-7 left-68 top-5 opacity-40 z-40">  
                                   </a>
-                                  <input type="search" placeholder="search for NFTs" class="absolute bg-gray-100 p-2 px-9 rounded-full w-72 h-10 border-2 border-gray-200 outline-none my-top-search">
+                                  <input type="search" placeholder="search for NFTs" class="relative bg-gray-100 p-2 px-9 rounded-full w-72 h-10 border-2 border-gray-200 outline-none my-top-search">
                         </div>
                         <div class="flex gap-6 relative">
                                     <div class="top-right-image">
@@ -92,9 +92,9 @@
                                     </div>
                         </div>
                        
-            </div>
-            
-            <div class="grid grid-row-3 w-[62%] relative px-10 float-left my-graphic-pic">
+            </div> 
+<div class="flex relative">
+            <div class="flex flex-col w-[62%] relative px-5 my-graphic-pic">
                         
                         <div class="flex flex-col">
                                     <h1 class="text-3xl font-bold">Recently Added NFTs</h1>
@@ -105,7 +105,7 @@
                                     </div>
                         </div>
 
-                        <div class="flex gap-12">
+                        <div class="flex relative gap-12 mb-20">
                                     <div class="my-contain">
                                                 <div>
                                                       <a href="#">
@@ -144,13 +144,45 @@
                                     </div>
                         </div>
 
+                  <div>
+                        <h2 class="text-2xl font-bold">Payment History</h2>
+                        <div class="flex justify-between mt-4 px-4 py-4 bg-gray-500">
+                              <div>
+                                  <p class="font-semibold text-sm">Reciepent</p>  
+                              </div>
+                              <div class="flex justify-between w-80">
+                                  <p class="font-semibold text-sm">Date</p>
+                                  <p class="font-semibold text-sm">Status</p>
+                                  <p class="font-semibold text-sm">Amout</p>
+                              </div>
+                        </div>
+                      <div class="flex relative justify-between px-1 py-2 mb-4 mt-2 rounded-xl bg-indigo-400">
+                              <div class="flex w-48 justify-between"><img src="imagesite/solana.png" class="w-10 h-10">
+                              <div class="grid gap-1">
+                                    <h2 class="font-semibold">Solana</h2>
+                                    <p class="text-gray-500">Subscription</p>
+                              </div>
+                              </div>
+
+                              <div class="flex w-80 gap-10 relative right-3 justify-between">
+                                    <p class="font-bold">21,jan 2021</p>
+                                    <p class="text-green-600 font-bold px-1 absolute left-32 px-3 pb-1 bg-green-100 rounded-xl">success</p>
+                                    <p class="font-bold">$15,00</p>
+                              </div>
+                     </div>
+                  </div>
+
+            
+            
+            
             </div>
-            <div class="flex flex-col gap-6 w-[33%] h-[50%] float-left ml-12">
-                        <div class="">
+       
+            <div class="w-[38%] flex-col flex relative mr-5">
+                        <div>
                                     <h2 class="text-2xl font-bold">My Wallets</h2>
                                     <h3 class="text-gray-400 leading-8">Recommended</h3>
                         </div>
-                        <div class=" rounded-xl relative w-[94%] h-56 my-background-cart">
+                        <div class="rounded-xl relative w-[94%] h-56 my-5 my-background-cart">
                                     <div class="rounded-full w-10 h-10 bg-white relative left-5 top-3 z-40"></div>
                                     <div class="rounded-full w-10 h-10 bg-white relative left-11 -top-7 opacity-40 z-30"></div>
                                     <div class="absolute top-0 left-0 w-full h-full z-0 my-star-back animate-stars my-star-back"></div>
@@ -165,25 +197,42 @@
 
                                     
                         </div>
-                        <div>
-                                    <h2>Overview</h2>
-                                    <div>
+                        <div class="grid grid-cols-1 z-40 w-full h-60 relative mb-4">
+                                    <h2 class="text-xl font-semibold">Overview</h2>
+                                    <div class="rounded-xl w-[94%] h-56 bg-indigo-500 relative grid grid-cols-1 mt-2 my-color-cart">
+                                          <div class="absolute left-11 top-5">
+                                                <p class="text-sm">Available balance in USD</p>
+                                                <p class="text-2xl">213,150.15</p>
+                                          </div>
+                                          <div class="relative flex top-24 right-16 justify-evenly">
+                                                <div>
+                                                <p class="text-sm">Transaction</p>
+                                                <p class="text-2xl">34,405</p>
+                                                </div>
+                                                <div>
+                                                <p class="text-sm">Wallets</p>
+                                                <p class="text-2xl">15</p>
+                                                </div>
+                                                
+                                          </div>
+                                          <p class="text-sm relative left-11 top-10">Last activity at 26 nov,2021</p>
+                                          
+                                    </div>
 
-                                    </div>
                         </div>
-                        <div>
-                                    <div>
-                                                <h3></h3>
-                                                <img src="">
+                        <div class="relative flex justify-between w-[94%] mt-4 pb-2">
+                                    <div class="shadow-xl rounded-xl h-40 w-44 flex flex-col gap-4 justify-center items-center">
+                                                <h3>BTC Wallet</h3>
+                                                <img src="imagesite/bitcoin.png" class="w-10 h-10">
                                     </div>
-                                    <div>
-                                                <h3></h3>
-                                                <img src="">
+                                    <div class="shadow-xl rounded-xl h-40 w-44 flex flex-col gap-4 justify-center items-center">
+                                                <h3>Ethereum Wallet</h3>
+                                                <img src="imagesite/ethereum.png" class="w-10 h-10">
                                     </div>
                         </div>
             </div>
-
-            </div>
+</div> 
+</div>
             </div>
 </body>
 </html>

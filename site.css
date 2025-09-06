@@ -1,8 +1,8 @@
 *{box-sizing: border-box;}
 
 .left-side-image{
-            width: 25px;
-            height: 25px;
+            width: 23px;
+            height: 23px;
             margin-right: 10px;
 }
 .middle-side a,
@@ -24,6 +24,10 @@
             left: 0;
             top: 0;
             height: 100%;
+}
+.down-side a {
+            position: relative;
+            top: -10px;
 }
 
 .middle-side a:hover,
