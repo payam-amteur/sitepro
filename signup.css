@@ -1,0 +1,64 @@
+*{box-sizing: border-box;}
+body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.my-image-ontop{
+            width: 40px;
+            height: 40px;
+}
+.my-headset{
+            transition: transform 0.2s ease-in;
+}
+.my-headset:hover{
+            transform: translateY(3px) scale(0.98);
+}
+.my-a-intop a{
+            font-size: large;
+            color: aliceblue;
+            letter-spacing: 1.5px;
+            transition: all 0.2s ease;
+            border-radius: 4px;
+            padding: 4px;
+}
+.my-a-intop a:hover{
+            background-color: rgb(218, 224, 224);
+            color: black;
+            transform: scale(1.1) rotate(5deg);
+}
+
+.my-search-butt span {
+display: inline-block;
+transition: transform 0.3s ease;
+}
+.my-search-butt:hover span:nth-child(odd) {
+transform: translateY(-3px); /* حروف فرد */
+text-shadow: 3px 0 2px rgba(255,255,255,0.6);
+}
+.my-search-butt:hover span:nth-child(even) {
+  transform: translateY(3px); /*حروف  زوج */
+  text-shadow: 3px 0 2px rgba(255,255,255,0.6);
+}
+.my-sign-back{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
+            backdrop-filter: blur(1px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.my-p-sign::before,
+.my-p-sign::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.6);
+  margin: 0 10px;
+  position: relative;
+  top: 10px;
+}
+.my-log-input input:focus::placeholder{
+  color: aliceblue;
+}
